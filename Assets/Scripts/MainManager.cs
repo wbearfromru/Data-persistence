@@ -70,6 +70,7 @@ public class MainManager : MonoBehaviour
 
     public void GameOver()
     {
+        DataManager.instance.CalculateNewBestScore(m_Points);
         m_GameOver = true;
         GameOverText.SetActive(true);
     }
